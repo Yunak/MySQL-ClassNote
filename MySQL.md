@@ -24,7 +24,7 @@
 
 - 数据世界
 
-![现实世界中客观对象的抽象过程](.\image\1.png "现实世界中客观对象的抽象过程")  
+![现实世界中客观对象的抽象过程](https://gitee.com/yunaks/MySQL-ClassNote/raw/ff3e0afce3616e244526b61ad1c42e91fdcee0dd/image/1.png "现实世界中客观对象的抽象过程")  
 
 
 ----------
@@ -40,7 +40,7 @@
 - 菱形表示实体的属性  
 
 
-![教师授课E-R图](.\image\2.png "教师授课E-R图")
+![教师授课E-R图](https://gitee.com/yunaks/MySQL-ClassNote/raw/ff3e0afce3616e244526b61ad1c42e91fdcee0dd/image/2.png "教师授课E-R图")
 
 ## 数据模型
 
@@ -61,7 +61,7 @@
 -  参照完整性:每一个主码用<span style="border-bottom:2px dashed yellow;">下划线</span>表示
 -  外码:
 
-![选择 投影](.\image\3.png "选择投影")
+![选择 投影](https://gitee.com/yunaks/MySQL-ClassNote/raw/ff3e0afce3616e244526b61ad1c42e91fdcee0dd/image/3.png "选择投影")
 ## 数据库相关概念
 - 数据库:(Data Base，DB）存放数据的仓库,相关关联的集合.
 - 数据库管理系统（Data Base Management System，DBMS）:用来操纵和管理数据库的大型软件
@@ -89,7 +89,7 @@
 
 ### 逻辑设计阶段
 - 转换规则:如果实体间关系是1-1,任何一个关系模式中加入另一个关系的主码和类型.
-![一对多](.\image\41.png "一对多")
+![一对多](https://gitee.com/yunaks/MySQL-ClassNote/raw/ff3e0afce3616e244526b61ad1c42e91fdcee0dd/image/4.png "一对多")
 方案1：“负责”与“职工”两关系模式合并。
 职工（职工号，姓名，年龄，产品号）
 产品（产品号，产品名，价格）
@@ -100,7 +100,7 @@
 产品（产品号，产品名，价格，仓库号，数量）
 
 - 如果实体之间是m:n的关系,则实体之间的联系也要转换成一个关系模式，包含两端实体的主码和联系类型的属性。每个实体和自己的属性组成一一个关系模式。
-![多对多](.\image\5.png "多对多")
+![多对多](https://gitee.com/yunaks/MySQL-ClassNote/raw/ff3e0afce3616e244526b61ad1c42e91fdcee0dd/image/5.png "多对多")
 ***
 ### 第二周第二次上课(0306)
 ### 了解SQL语言: 结构化查询语言
@@ -172,16 +172,15 @@ drop database 数据库名字; #一次只能删除一个
 - 1数值类型
  - 整数类型: tinyint smallint mediumint int bigint
  - 浮点类型: float double decimal
-![数值类型](.\image\6.png "数值")
+![数值类型](https://gitee.com/yunaks/MySQL-ClassNote/raw/ff3e0afce3616e244526b61ad1c42e91fdcee0dd/image/6.png "数值")
 - 2.字符串类型
 Char varchar text blob
-![字符串](.\image\7.png "字符串")
+![字符串](https://gitee.com/yunaks/MySQL-ClassNote/raw/ff3e0afce3616e244526b61ad1c42e91fdcee0dd/image/7.png "字符串")
 - 3时间类型
  Date year time
-![时间](.\image\8.png "时间类型")
+![时间](https://gitee.com/yunaks/MySQL-ClassNote/raw/ff3e0afce3616e244526b61ad1c42e91fdcee0dd/image/8.png "时间类型")
 ### create table 创建表
 #### 语法格式  
-
 
 ```
 create table 表名
@@ -342,7 +341,7 @@ alter table 表名 add Constraint约束名Foreign Key(外键字段名)References
    假设要开设一门新的课程，暂时还没有人选修。这样，由于还没有"学号"关键字，课程名称和学分也无法记录入数据库。
    - 删除异常:
    假设一- 批学生已经完成课程的选修，这些选修记录就应该从数据库表中删除。但是，与此同时，课程名称和学分信息也被删除了。很显然，这也会导致插入异常。
-![拆分后](.\image\10.png "拆分后解决")
+![拆分后](https://gitee.com/yunaks/MySQL-ClassNote/raw/ff3e0afce3616e244526b61ad1c42e91fdcee0dd/image/9.png "拆分后解决")
 
 
 授课信息表（课程号，教师号，课程名称，教师姓名，所在教室，授课时间）  
