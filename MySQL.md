@@ -88,8 +88,8 @@
 
 
 ### 逻辑设计阶段
-- 转换规则:如果实体间关系是1-1,任何一个关系模式中加入另一个关系的主码和类型.
-![一对多](https://gitee.com/yunaks/MySQL-ClassNote/raw/ff3e0afce3616e244526b61ad1c42e91fdcee0dd/image/4.png "一对多")
+- 转换规则:如果实体间关系是1-1,任何一个关系模式中加入另一个关系的主码和类型.  
+![一对多](https://gitee.com/yunaks/MySQL-ClassNote/raw/ff3e0afce3616e244526b61ad1c42e91fdcee0dd/image/41.png "一对多")
 方案1：“负责”与“职工”两关系模式合并。
 职工（职工号，姓名，年龄，产品号）
 产品（产品号，产品名，价格）
