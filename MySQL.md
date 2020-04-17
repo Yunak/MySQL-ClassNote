@@ -16,9 +16,8 @@
 - 现实世界
 - 信息世界
 
-|   |     | 
-| :--------: | :-----:  | :----:| 
 |实体（Entity）|客观存在并且可以相互区别的事物称为实体。实体可以是具体的事物，也可以是抽象的事件。| 一对一/一对多/多对多|
+--|--|--|
 |属性（Attribute）|描述实体的特性。一个实体可以用若干个属性来描述。|
 |码（Key）|**唯一**标识实体的属性或属性的组合。|
 |域（Domain）|属性的取值范围称为该属性的域。| 
@@ -139,6 +138,7 @@ set password for 'root'@'localhost'=password('123'); #在MySQL中
 - **创建数据库**:
 
 | information_schema |
+|--|
 | mysql              |
 | performance_schema |
 | sys                |
@@ -246,7 +246,6 @@ CONSTRAINT w3 FOREIGN KEY (cno,cterm) REFERENCES course(cno,cterm),
 CONSTRAINT w2 FOREIGN KEY (tno) REFERENCES teacher(tno)
 );
 ``` 
-```
 ## 第四周第一次上课(0319)
 ### 插入单条记录
 #### 语句格式
@@ -402,10 +401,8 @@ select sname as '姓名',year(sbirthday) as '出生年份',sdept as '所在系' 
 
 # 条件查询
 
-
-|   |     | 
-| :--------: | :-----:  | :----:| 
 |查询条件	   |运 算 符|
+--|--|--
 |比较运算符|	=,<,>,<=,>=,<    >,!=,!<,!>|
 |范围运算符	|BETWEEN AND,NOT BETWEEN AND|
 |列表运算符	|IN,NOT IN|
@@ -455,7 +452,7 @@ where 字段 is [not]null
 ### 聚集函数
 
 |  聚集函数| 具体用法    | 具体含义 |
-| :--------| :-----  | :----| 
+--|--|--|
 |count|count([distinct/all]*)|统计元组个数|
 |count|count([distinct/all]<列名>)|统计一列中值的个数
 |SUM|SUM[DISTINCTALL]<列名|计算列值的总和(此列必须为数值型|
@@ -555,7 +552,7 @@ select 字段名 from 表名 where 字段名=/in(select 字段名 from 表名 wh
 eg:查询选修了c02的学生姓名
 select sname from student where sno in(select sno from sc where cno='c02')
 ```
-```
+
 
 ## 第Ⅶ周第二次上课(0410)
 ### any和all操作实现查询
