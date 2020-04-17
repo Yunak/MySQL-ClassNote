@@ -598,4 +598,4 @@ updated 表名 set 字段名=表达式[where <条件表达式>]
 delete from 表名 [where 条件表达式]
 若有where子句,删除表中满足条件的行
 若没有where子句,删除表中所有数据保留该表结构
-```
+``` 
